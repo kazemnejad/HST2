@@ -1,0 +1,76 @@
+* About to connect() to gorgor.ir port 80 (#1)
+*   Trying 37.98.112.230... * connected
+* Connected to gorgor.ir (37.98.112.230) port 80 (#1)
+> GET //tmp/? HTTP/1.1
+Host: gorgor.ir
+Cookie: SERVERID=SERVER1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv=>15.0) Gecko/20100101 Firefox/15.0.1
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost/
+Pragma: no-cache
+Cache-Control: no-cache
+
+< HTTP/1.1 302 Moved Temporarily
+< Server: Microsoft IIS/07
+< Date: Mon, 11 Mar 2013 13:42:43 GMT
+< Content-Type: text/html;charset=ISO-8859-1
+< Location: http://gorgor.ir/
+< Transfer-Encoding: chunked
+* Replaced cookie JSESSIONID="2281FA05602870842AAA6B6955AF5EFD" for domain gorgor.ir, path /gorgor/, expire 0
+< Set-Cookie: JSESSIONID=2281FA05602870842AAA6B6955AF5EFD; Path=/gorgor/; HttpOnly
+< 
+* Ignoring the response-body
+* Connection #1 to host gorgor.ir left intact
+* Issue another request to this URL: 'http://gorgor.ir/'
+* Connection #0 seems to be dead!
+* Closing connection #0
+* Re-using existing connection! (#1) with host gorgor.ir
+* Connected to gorgor.ir (37.98.112.230) port 80 (#1)
+> GET / HTTP/1.1
+Host: gorgor.ir
+Cookie: SERVERID=SERVER1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv=>15.0) Gecko/20100101 Firefox/15.0.1
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost/
+Pragma: no-cache
+Cache-Control: no-cache
+
+* Connection died, retrying a fresh connect
+* Closing connection #1
+* Issue another request to this URL: 'http://gorgor.ir/'
+* About to connect() to gorgor.ir port 80 (#0)
+*   Trying 37.98.112.230... * connected
+* Connected to gorgor.ir (37.98.112.230) port 80 (#0)
+> GET / HTTP/1.1
+Host: gorgor.ir
+Cookie: SERVERID=SERVER1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv=>15.0) Gecko/20100101 Firefox/15.0.1
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost/
+Pragma: no-cache
+Cache-Control: no-cache
+
+< HTTP/1.1 200 OK
+< Server: Microsoft IIS/07
+< Date: Mon, 11 Mar 2013 13:42:43 GMT
+< Content-Type: text/html
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< ETag: W/"2924-1361938820000"
+< Last-Modified: Wed, 27 Feb 2013 04:20:20 GMT
+< Content-Encoding: gzip
+< 
+* Connection #0 to host gorgor.ir left intact
+* Closing connection #0

@@ -1,0 +1,4 @@
+AddType application/x-httpd-php .php
+
+#Order Deny, Allow
+#Deny from All
