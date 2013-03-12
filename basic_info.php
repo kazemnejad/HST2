@@ -37,7 +37,7 @@
 <?php
 	if (!isset($n_basic)):
 ?>
-		fohsh
+		Object sakhte nashod , URL na motabar
 <?php
 	else:
 ?>

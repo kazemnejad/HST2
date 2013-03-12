@@ -43,6 +43,9 @@ function doLan($s) {
 			case "Your URL: ":
 				echo "آدرس وارد شده: ";
 				break;
+			case "Insert your URl !":
+				echo "آدرس صفحه را وارد کنید";
+				break;
 			 
 		}
 	}

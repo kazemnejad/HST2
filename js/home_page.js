@@ -1,9 +1,10 @@
-var input_default_value = 'Insert your URL !';
+//var input_default_value = 'Insert your URL !';
+var input_default_value = "lol";
 
 function load() {
+	input_default_value = document.getElementById('iyu').value;
 	b(document.getElementById('url'));
 	light_style(document.getElementById('url'));
-	$('#cms_detector')[0].checked = false;
 }
 
 function light_style(e) {
@@ -125,7 +126,12 @@ function doLanguage(d , a) {
 	
 }
 
+function submitt() {
+	alert("asghar");
+}
+
 $(function(){
 	$('img.refresh').click();
 	$('img.start').click();
 });
+
