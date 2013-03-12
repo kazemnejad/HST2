@@ -116,6 +116,9 @@
 .table{
 	border: 1px solid black;
 	border-radius: 20px;
+	padding: 5px;
+	box-shadow: 0 0 2px black;
+	background-image: url(../images/az_subtle.png);
 	position: relative;
 	
 }
