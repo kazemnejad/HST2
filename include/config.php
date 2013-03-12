@@ -5,7 +5,7 @@ ini_set("display_errors", "On");
 $_config = array();
 $_config['db']['host'] = "localhost";
 $_config['db']['user'] = "root";
-$_config['db']['pass'] = "";
+$_config['db']['pass'] = "asdfghj";
 $_config['db']['name'] = "phpcrawl";
 $_config['db']['lName'] = "";
 $_config['main']['host'] = "localHost";
