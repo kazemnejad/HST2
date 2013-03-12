@@ -121,7 +121,7 @@ function generateByType ($type, $generateType, $userCount = 0){
 			else if ($generateType == _EMPTY_)
 			return "";
 			else if ($generateType == _HACKED_)
-			return "hackedPass";
+			return "'";
 			break;
 			#for username fields
 		case _USER_:
@@ -130,7 +130,7 @@ function generateByType ($type, $generateType, $userCount = 0){
 			else if ($generateType == _EMPTY_)
 			return "";
 			else if ($generateType == _HACKED_)
-			return "hackedhstUser".$userCount+10;
+			return "'".$userCount+10;
 			break;
 			#for date like type
 		case _DATE_:

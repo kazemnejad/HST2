@@ -1,4 +1,5 @@
 <?php
+require_once '../config.php';
 /**
  * <h1>PHP Crawler</h1>
  * @author Vladimir Fedorkov, Doug Martin, and Sumit Dutta
@@ -44,7 +45,7 @@ $footer_html = ''; // or just define HTML here e.g. $footer_html = '<hr /><p>Cop
 $s_op['mysql_host'] = "localhost";
 $s_op['mysql_db'] = "phpcrawl";
 $s_op['mysql_user'] = "root";
-$s_op['mysql_pass'] = "";
+$s_op['mysql_pass'] = getConfig('db', 'pass');
 
 //$CRAWL_ENTRY_POINT_URL = "http://".$_SERVER['HTTP_HOST']; // website to crawl MUST begin with http:// prefix
 // website to crawl MUST begin with http:// prefix

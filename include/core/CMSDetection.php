@@ -139,4 +139,4 @@ class Page{
 }
 
 //CMSDetector::detectAll(array('Joomla'), 'http://localhost/graffito/');
-CMSDetector::detectAll(array('Joomla' , 'WordPress' , 'vBulettin'), 'http://helli3.ir/');
+//CMSDetector::detectAll(array('Joomla' , 'WordPress' , 'vBulettin'), 'http://helli3.ir/');
