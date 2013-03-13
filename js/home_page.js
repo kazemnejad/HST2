@@ -130,6 +130,14 @@ function submitt() {
 	alert("asghar");
 }
 
+function showDiagram(a) {
+	$.get('diagram.php' , {
+		ehtemal: a
+	}).done(function(data){
+		$('#dia').html(data).show();
+	});
+}
+
 $(function(){
 	$('img.refresh').click();
 	$('img.start').click();

@@ -1,6 +1,3 @@
-/* Product 1 */
 input#f-product1:checked ~ .graph-container > li:nth-child(1) .bar-inner { height: 25%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(2) .bar-inner { height: 50%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(3) .bar-inner { height: 75%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(4) .bar-inner { height: 100%; bottom: 0; }
-input#f-product1:checked ~ .graph-container > li:nth-child(5) .bar-inner { height: 50%; bottom: 0; }
+input#f-product1:checked ~ .graph-container > li:nth-child(2) .bar-inner { height: 30%; bottom: 0; }
+input#f-product1:checked ~ .graph-container > li:nth-child(3) .bar-inner { height: 11%; bottom: 0; }

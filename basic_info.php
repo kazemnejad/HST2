@@ -15,12 +15,14 @@
 		}
 	}*/
 	
+	
 	$a = parse_url($_GET['url']);
-	if(!isset($a['scheme']))	
+	if(!isset($a['scheme'])) {
 		$a = parse_url("http://".$_GET['url']);
 		$hostname = explode("." , $a['host']);
 		$b = $hostname[count($hostname)-2] . "." . $hostname[count($hostname)-1];
 		$a = parse_url("http://".$b);
+	}
 	if(isset($a['host'])) {
 		$url = $a['scheme']."://".$a['host']."/";
 		$n_basic = new basicInformation($url);
@@ -54,81 +56,6 @@
 				<input type="hidden" name="url" value="<?php echo htmlentities($url)?>"/>
 				<input type="submit" class="blueButton" style="width: 100%;"/>
 			</form>
-		</div>
-		
-		
-		<div class="container">
-            <!-- Codrops top bar -->
-          
-            <section class="main">
-			
-                <input type="radio" name="resize-graph" id="graph-normal" checked="checked" />
-                <input type="radio" name="paint-graph" id="graph-blue" checked="checked" />
-                <input type="radio" name="fill-graph" id="f-product1" checked="checked" /><label for="f-product1">Product 1</label>
-
-                <ul class="graph-container">
-                    <li>
-                        <span>2008</span>
-                        <div class="bar-wrapper">
-                            <div class="bar-container">
-                                <div class="bar-background"></div>
-                                <div class="bar-inner">25</div>
-                                <div class="bar-foreground"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>2009</span>
-                        <div class="bar-wrapper">
-                            <div class="bar-container">
-                                <div class="bar-background"></div>
-                                <div class="bar-inner">95</div>
-                                <div class="bar-foreground"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>2010</span>
-                        <div class="bar-wrapper">
-                            <div class="bar-container">
-                                <div class="bar-background"></div>
-                                <div class="bar-inner">75</div>
-                                <div class="bar-foreground"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>2011</span>
-                        <div class="bar-wrapper">
-                            <div class="bar-container">
-                                <div class="bar-background"></div>
-                                <div class="bar-inner">100</div>
-                                <div class="bar-foreground"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>2012</span>
-                        <div class="bar-wrapper">
-                            <div class="bar-container">
-                                <div class="bar-background"></div>
-                                <div class="bar-inner">50</div>
-                                <div class="bar-foreground"></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <ul class="graph-marker-container">
-                            <li style="bottom:25%;"><span>25%</span></li>
-                            <li style="bottom:50%;"><span>95%</span></li>
-                            <li style="bottom:75%;"><span>75%</span></li>
-                            <li style="bottom:100%;"><span>100%</span></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </section>
-
         </div>
 <?php
 	endif;

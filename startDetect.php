@@ -1,13 +1,36 @@
+<script type="text/javascript" src="js/lib/jquery-1.9.1.js"></script>
+<script src="js/home_page.js" ></script>
+<link rel="stylesheet" type="text/css" href="css/hst.css" />
+
 <?php
 require_once 'include/core/utilFunctions.php';
 require_once 'include/core/CMSDetection.php';
 
+
+//header('Location : diagram.php');
+?>
+<div id="dia">
+<?php
+$result = array(
+	"Joomla" => "25%",
+	"WordPress" => "30%",
+	"vBulletin" => "11%",
+);
+
+$b = "'";
+$i = 0;
+foreach($result as $key => $value) {
+		$b .= $key . '!' . $value;
+}
+$b .= "'";
+
+echo '<a onclick="showDiagram('.$b.')">asgharasgharasghar</a>';
+
 function writeCssForChart($result){
-	$file = fopen ("values.css" , "w+");
-	$counter = 1;
-	
+	$file = fopen ("css/values.css" , "w+");
+	$counter = 1;	
 	foreach ($result as $name => $percent){
-		fwrite ($file, "input#f-product1:checked ~ .graph-container > li:nth-child(" . $counter . ") .bar-inner { height: " . $percent . "; bottom: 0; }");
+		fwrite ($file, "input#f-product1:checked ~ .graph-container > li:nth-child(" . $counter . ") .bar-inner { height: " . $percent . "; bottom: 0; }\n");
 		$counter++;	
 	}
 	fclose($file);
@@ -19,5 +42,5 @@ foreach ($result as $cms => $value) {
 }
 
 writeCssForChart($result);
-
-echo '<input type="button" value="salam!" onclick="addDiagram" />';
+?>
+</div>
