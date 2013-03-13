@@ -143,11 +143,15 @@
 }
 .top_menu{
 	 /*background-color: #282828;*/
-	 background-image: url("../images/topg.gif");
-	 
-	 width: 100%;
+	 background-image: url("../images/topg.gif");	 
+	 width: 98%;
 	 height: 70px;
-	 margin: -20px;
+	 margin-top: -20px;
+	 margin-left: 1%;
+	 margin-right: 1%;
+	 display: block;
+	 
+	 box-shadow: 0 2px 9px gray;
 }
 .top_menu A{
 	color: white;
@@ -164,9 +168,8 @@
 }
 
 .line_menu li:hover{
-	/*background-color: gray;*/
 	box-shadow: 
-		inset 0 0 0 110px green,
+		inset 0 0 0 110px #0080FF,
 		inset 0 0 0 16px red,
 		0 1px 2px black;
 }
@@ -182,6 +185,12 @@
     height: 50px;
     position: absolute;
     width: 400px;
+    
+    
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin: -50px 0 0 -100px;
 }
 
 .search_field{
@@ -201,10 +210,9 @@
 	border-radius: 20px;
 	padding: 5px;
 	/*background-image: url(../images/aaa.png);*/
-	background-color: #0FA6CC;
 	box-shadow: 0 0 2px black;
 	position: relative;
-	
+	background-color:rgba(255,255,255,0.3);
 }
 .submit{
 	float:left;
@@ -242,8 +250,8 @@
 
 body {
 	font-family: "IranianSans";
-/*    background-image: url(../images/bedge_grunge.png);*/
-	background-image: url(../images/bgb.gif);
+    background-image: url(../images/asghar.png);
+/*	background-image: url(../images/bbg.png);*/
 }
 
 
@@ -549,6 +557,7 @@ body {
 	height: 400px;
 	padding: 20px;
 	position: relative;
+	background-color:rgba(255,255,255,0.4);
 }
 .log2 {
 	border: 1px solid black;
@@ -558,6 +567,7 @@ body {
 	height: 400px;
 	padding: 20px;
 	position: relative;
+	background-color:rgba(255,255,255,0.4);
 }
 .log3 {
 	border: 1px solid black;
@@ -566,6 +576,7 @@ body {
 	height: 400px;
 	padding: 20px;
 	position: relative;
+	background-color:rgba(255,255,255,0.4);
 }
 
 .refresh {

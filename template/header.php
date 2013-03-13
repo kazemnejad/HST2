@@ -31,6 +31,8 @@ else if(!isset($_SESSION['language']))
 		<a href='http://gorgor.ir'><?php doLan("About us")?></a>
 	</li>
 </ul>
-<a href="?gLan=en"><img src="images/uk.png" style="float: left; padding-left: 20px" title=<?php doLan("English");?> class="imageButton"> <?php //onclick="doLanguage('en' , 'language.php')"/>?></a>
-<a href="?gLan=fa"><img src="images/iran.png" style="float: left;" title=<?php doLan("Persian");?> class="imageButton"> <?php //onclick="doLanguage('fa' , 'language.php')"/>?></a>
+<a href="?gLan=en"><img src="images/uk.png" style="float: left;" title=<?php doLan("English");?> class="imageButton"> <?php //onclick="doLanguage('en' , 'language.php')"/>?></a>
+<br/>
+<br/>
+<a href="?gLan=fa"><img src="images/Iran.png" style="float: left; margin-top: -10px; " title=<?php doLan("Persian");?> class="imageButton"> <?php //onclick="doLanguage('fa' , 'language.php')"/>?></a>
 </div>
