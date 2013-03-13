@@ -15,12 +15,14 @@
 		}
 	}*/
 	
+	
 	$a = parse_url($_GET['url']);
-	if(!isset($a['scheme']))	
+	if(!isset($a['scheme'])) {
 		$a = parse_url("http://".$_GET['url']);
 		$hostname = explode("." , $a['host']);
 		$b = $hostname[count($hostname)-2] . "." . $hostname[count($hostname)-1];
 		$a = parse_url("http://".$b);
+	}
 	if(isset($a['host'])) {
 		$url = $a['scheme']."://".$a['host']."/";
 		$n_basic = new basicInformation($url);
@@ -54,7 +56,7 @@
 				<input type="hidden" name="url" value="<?php echo htmlentities($url)?>"/>
 				<input type="submit" class="blueButton" style="width: 100%;"/>
 			</form>
-		</div>
+        </div>
 <?php
 	endif;
 ?>

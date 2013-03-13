@@ -17,6 +17,8 @@ else if(!isset($_SESSION['language']))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/hst.css" />
+	
+	
 	<script type="text/javascript" src="js/lib/jquery-1.9.1.js"></script>
 	<script src="js/home_page.js" ></script>
 </head>	
