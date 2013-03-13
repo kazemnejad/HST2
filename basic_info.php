@@ -20,11 +20,14 @@
 	if(!isset($a['scheme'])) {
 		$a = parse_url("http://".$_GET['url']);
 		$hostname = explode("." , $a['host']);
-		$b = $hostname[count($hostname)-2] . "." . $hostname[count($hostname)-1];
+	$hostname = explode("." , $a['host']);
+		if (count($hostname) > 1){
+			$b = $hostname[count($hostname)-2] . "." . $hostname[count($hostname)-1];
+		}
 		$a = parse_url("http://".$b);
 	}
 	if(isset($a['host'])) {
-		$url = $a['scheme']."://".$a['host']."/";
+		$url = $a['scheme']."://".$a['host']. $a['path'];
 		$n_basic = new basicInformation($url);
 	}
 	$rm = new RequestManager();
