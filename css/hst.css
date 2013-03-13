@@ -129,6 +129,14 @@
 	margin: -50px 0 0 -100px;
 }
 
+.page_mid2 {
+	top: 50%;
+	left: 50%;
+	left: 40%;
+	position: absolute;
+	margin: -50px 0 0 -100px;
+}
+
 .page_bottom_left{
 	bottom: 10px;
 	left: 10px;
@@ -175,7 +183,7 @@
 }
 
 
-.search_bar{
+.search_bar {
 	padding-top: 10px;
     /*background-color: lightblue;/*#F9F9FA;*/
     background-image: url("../images/topg.gif");
@@ -184,11 +192,13 @@
     box-shadow: 0px 10px 15px #C6C6C6;
     height: 50px;
     position: absolute;
-    width: 400px;
+    width: 450px;
     
     
 	top: 50%;
 	left: 50%;
+	left: 45%;
+	right: 45%;
 	position: absolute;
 	margin: -50px 0 0 -100px;
 }

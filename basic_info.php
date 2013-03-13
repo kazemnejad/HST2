@@ -28,8 +28,8 @@
 	$rm = new RequestManager();
 	$db = new db_engine();
 	$db->query("INSERT INTO history (basic_url, date) VALUES ('".addslashes($url)."', '".date("y/m/d")."')");
-//	if ($rm->getHeaders($url) !== false)
-	if (true)
+	if ($rm->getHeaders($url) !== false)
+//	if (true)
 	{
 ?>
 <body>
@@ -62,7 +62,16 @@
 </body>
 <?php
 	}
-	else
-		die("salam~!");
+	else {
+		?>
+		<div class="page_mid2" style="text-align: center;">
+			<img src="images/erro.png"/>
+			<br/>
+			<?php doLan("Sorry , unable to connect to website.")?>
+			<br/>
+			<p style="color: gray;" ><?php doLan("It maybe caused by internet connection problem or this website hasn't been created.")?></p>
+		</div>
+		<?php
+	}
 	require_once 'template/footer.php'; 
 ?>

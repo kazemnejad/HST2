@@ -46,6 +46,12 @@ function doLan($s) {
 			case "Insert your URl !":
 				echo "آدرس صفحه را وارد کنید";
 				break;
+			case "Sorry , unable to connect to website.":
+				echo "متاسفانه نمی توان به این وبسایت متصل شد";
+				break;
+			case "It maybe caused by internet connection problem or this website hasn't been created.":
+				echo "این مشکل می تواند به دلیل مشکل در اتصال به اینترنت باشد و یا این وبسایت وجود ندارد";
+				break;
 			 
 		}
 	}

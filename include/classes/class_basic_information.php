@@ -36,5 +36,6 @@ class basicInformation
 	{
 		echo doLan("Your URL: ").$this->url;
 	}
+	
 };
 ?>
