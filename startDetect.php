@@ -11,20 +11,14 @@ require_once 'include/core/CMSDetection.php';
 ?>
 <div id="dia">
 <?php
-$result = array(
+/*$result = array(
 	"Joomla" => "25%",
 	"WordPress" => "30%",
 	"vBulletin" => "11%",
 );
+*/
 
-$b = "'";
-$i = 0;
-foreach($result as $key => $value) {
-		$b .= $key . '!' . $value;
-}
-$b .= "'";
 
-echo '<a onclick="showDiagram('.$b.')">asgharasgharasghar</a>';
 
 function writeCssForChart($result){
 	$file = fopen ("css/values.css" , "w+");
@@ -42,5 +36,13 @@ foreach ($result as $cms => $value) {
 }
 
 writeCssForChart($result);
+
+$b = "'";
+foreach($result as $key => $value) {
+		$b .= $key . '!' . $value;
+}
+$b .= "'";
+
+echo '<br><a class="blueButton" onclick="showDiagram('.$b.')">SHOW IN DIAGRAM FORMAT</a>';
 ?>
 </div>
