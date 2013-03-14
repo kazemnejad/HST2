@@ -112,7 +112,7 @@ function generateByType ($type, $generateType, $userCount = 0){
 			else if ($generateType == _EMPTY_)
 			return "";
 			else if ($generateType == _HACKED_)
-			return "hackedText";
+			return "1' or 1 = '1";
 			break;
 			#for passwords
 		case _PASS_:

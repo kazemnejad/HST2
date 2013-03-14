@@ -1,8 +1,30 @@
-* Closing connection #3
-* Connection (#3) was killed to make room (holds 5)
-* About to connect() to www.zoomit.ir port 80 (#3)
+* About to connect() to zoomit.ir port 80 (#0)
 *   Trying 46.4.61.179... * connected
-> GET //xmlsitemap.php? HTTP/1.1
+> GET /? HTTP/1.1
+Host: zoomit.ir
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv=>15.0) Gecko/20100101 Firefox/15.0.1
+Accept: */*
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost/
+Pragma: no-cache
+Cache-Control: no-cache
+
+< HTTP/1.1 301 Moved Permanently
+< Date: Thu, 14 Mar 2013 07:10:09 GMT
+< Server: Apache/2
+< Location: http://www.zoomit.ir/?
+< Content-Length: 291
+< Connection: close
+< Content-Type: text/html; charset=iso-8859-1
+< 
+* Closing connection #0
+* Issue another request to this URL: 'http://www.zoomit.ir/?'
+* About to connect() to www.zoomit.ir port 80 (#0)
+*   Trying 46.4.61.179... * connected
+> GET /? HTTP/1.1
 Host: www.zoomit.ir
 Cookie: 7d1e8fa1b442d7ceaf5467e7d2ff0372=aq09qfnrqrjbvkolpv79uc0is2
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv=>15.0) Gecko/20100101 Firefox/15.0.1
@@ -15,21 +37,19 @@ Referer: http://localhost/
 Pragma: no-cache
 Cache-Control: no-cache
 
-< HTTP/1.1 404 پیدا نشد
-< Date: Tue, 12 Mar 2013 08:32:50 GMT
+< HTTP/1.1 200 OK
+< Date: Thu, 14 Mar 2013 07:10:12 GMT
 < Server: Apache/2
 < X-Powered-By: PHP/5.3.17
 < P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+< Content-Encoding: gzip
+< X-Content-Encoded-By: Joomla! 2.5
 < Cache-Control: no-cache
 < Pragma: no-cache
-< Vary: Accept-Encoding,User-Agent
-< Content-Encoding: gzip
-< Content-Length: 561
+< Vary: User-Agent
+< Connection: close
+< Transfer-Encoding: chunked
 < Content-Type: text/html; charset=utf-8
 < 
-* Connection #3 to host www.zoomit.ir left intact
-* Closing connection #4
 * Closing connection #0
-* Closing connection #1
-* Closing connection #2
-* Closing connection #3
+* WARNING: failed to save cookies in cookie.coo

@@ -102,8 +102,9 @@ function main(){
 	if ($file === false)
 		$pageId = -1;
 	else 
-		$pageId = $file[0];
+		$pageId = 0;
 	global $g_db;
+	//hst_log($file[0]);
 	
 	while (true) {
 		if (stop()) {

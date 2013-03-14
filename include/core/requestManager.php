@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", "On");
 
-chdir("../../");
+//chdir("../../");
 
 require_once 'include/config.php';
 require_once 'include/core/utilFunctions.php';
@@ -208,5 +208,5 @@ class RequestManager{
 /*
  $rq2 = new RequestManager();
  echo_nobuffer(print_r($rq2->makeCURL('http://localhost/graffito/', array(CURLOPT_HEADER => true)), true));*/
-$rq = new RequestManager();
-$rq->run();
+/*$rq = new RequestManager();
+$rq->run();*/

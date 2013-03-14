@@ -35,10 +35,10 @@ if (empty($GLOBALS["www_has_crawl_config"])) {
 // We both know about reqire_once(), I just keep old style.
 $GLOBALS["www_has_crawl_config"] = 1;
 
-if (!isset($_GET['kerm'])){
+/*if (!isset($_GET['kerm'])){
 	hst_error("no url entered", "Crawler");
 	die();
-}
+}*/
 
 /* HTML headers and footers */
 $head_file = 'tpl/elt/head.php'; // file with HTML between <head> and </head> tags

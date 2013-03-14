@@ -1,9 +1,8 @@
-* About to connect() to gorgor.ir port 80 (#0)
-*   Trying 37.98.112.230... * connected
-* Connected to gorgor.ir (37.98.112.230) port 80 (#0)
-> GET /fcui/daily/ HTTP/1.1
-Host: gorgor.ir
-Cookie: JSESSIONID=E4015DE58DAB68BBC652E37A8E0276FA; SERVERID=SERVER1; org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=en
+* About to connect() to localhost port 80 (#0)
+*   Trying 127.0.0.1... * connected
+> GET /bug/index.php HTTP/1.1
+Host: localhost
+Cookie: bb_lastactivity=0; bb_lastvisit=1363184727; bb_sessionhash=f1f2914ba472c1329975684c882003c8
 User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
 Accept: */*
 Accept-Language: en-us,en;q=0.5
@@ -13,13 +12,14 @@ Content-Type: application/x-www-form-urlencoded; charset=UTF-8
 Pragma: no-cache
 Cache-Control: no-cache
 
-< HTTP/1.1 404 Not Found
-< Server: Microsoft IIS/07
-< Date: Mon, 11 Mar 2013 13:42:57 GMT
-< Content-Type: text/html;charset=UTF-8
-< Transfer-Encoding: chunked
+< HTTP/1.1 200 OK
+< Date: Wed, 13 Mar 2013 14:39:48 GMT
+< Server: Apache/2.2.22 (Ubuntu)
+< X-Powered-By: PHP/5.3.10-1ubuntu3.4
 < Vary: Accept-Encoding
 < Content-Encoding: gzip
+< Content-Length: 121
+< Content-Type: text/html
 < 
-* Connection #0 to host gorgor.ir left intact
+* Connection #0 to host localhost left intact
 * Closing connection #0
