@@ -101,7 +101,7 @@ function stopCrawler() {
 
 function startCrawler(url) {
 	$.get("hst/crawler.php", {
-		kerm:url,
+		url: url,
 	}).done(function(data) {
 //		alert("finished");
 //		alert(data);

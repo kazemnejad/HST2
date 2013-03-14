@@ -18,18 +18,17 @@
 	
 	$a = parse_url($_GET['url']);
 	if(!isset($a['scheme'])) {
-		$b = 0;
 		$a = parse_url("http://".$_GET['url']);
 		$hostname = explode("." , $a['host']);
-		$hostname = explode("." , $a['host']);
+	$hostname = explode("." , $a['host']);
 		if (count($hostname) > 1){
 			$b = $hostname[count($hostname)-2] . "." . $hostname[count($hostname)-1];
 		}
-		if ($b)
-			$a = parse_url("http://". $b);
+		$a = parse_url("http://".$b);
 	}
 	if(isset($a['host'])) {
-		$url = $a['scheme']."://".$a['host'].$a['path'];
+		if (!isset($a['path'])) $a['path'] = '/';
+		$url = $a['scheme']."://www.".$a['host']. $a['path'];
 		$n_basic = new basicInformation($url);
 	}
 	$rm = new RequestManager();
