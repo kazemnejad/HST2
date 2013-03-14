@@ -42,7 +42,7 @@ foreach($result as $key => $value) {
 		$b .= $key . '!' . $value;
 }
 $b .= "'";
-
 echo '<br><a class="blueButton" onclick="showDiagram('.$b.')">SHOW IN DIAGRAM FORMAT</a>';
+
 ?>
 </div>

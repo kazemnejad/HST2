@@ -27,7 +27,8 @@
 		$a = parse_url("http://".$b);
 	}
 	if(isset($a['host'])) {
-		$url = $a['scheme']."://".$a['host']. $a['path'];
+		if (!isset($a['path'])) $a['path'] = '/';
+		$url = $a['scheme']."://www.".$a['host']. $a['path'];
 		$n_basic = new basicInformation($url);
 	}
 	$rm = new RequestManager();

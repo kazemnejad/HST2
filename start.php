@@ -3,7 +3,8 @@ require_once 'template/header.php';
 
 $s = "1\n".
 	$url = $_GET['url'];
-file_put_contents("crawler/crawl_start_command.txt", $s);
+
+	file_put_contents("crawler/crawl_start_command.txt", $s);
 ?>
 <meta http-equiv="refresh" content="3; url=status.php?url=<?php echo htmlentities($url)?>"/>
 <br/>

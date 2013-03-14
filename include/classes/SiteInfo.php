@@ -61,7 +61,7 @@ class SiteInfo{
 			}
 						
 			$line = explode(":	", $value);
-			
+			hst_error(print_r($line, true), "SiteInfo");
 			$whoisArray[$line[0]] = $line[1];
 			self::LOG("key: " . $line[0]);
 			/*for ($j = 1; $j < count($line); $j++)

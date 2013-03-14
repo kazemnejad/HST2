@@ -38,7 +38,7 @@ set_time_limit (0);
 // error_reporting (E_ERROR | E_WARNING | E_PARSE);
 error_reporting (E_ALL);
 
-$CRAWL_ENTRY_POINT_URL = $_GET['kerm'];
+$CRAWL_ENTRY_POINT_URL = $_GET['url'];
 
 $crawl_max_shown_depth = $CRAWL_MAX_DEPTH - 1;
 
@@ -55,6 +55,7 @@ $base_host = $base_host['scheme'].'://'.$base_host['host'];
 
 function stopped(){
 	$file = file("sc.txt");
+	hst_log($file[0]);
 	if ($file[0] == '0')
 		return false;
 	return true;
