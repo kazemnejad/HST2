@@ -17,18 +17,32 @@
 	
 	
 	$a = parse_url($_GET['url']);
+	$rq = new RequestManager();
+	$headers = $rq->getHeaders($_GET['url']);
+	hst_log('<br>');
+	hst_log('<br>');
+	hst_log('<br>');
+	//hst_log(print_r("HTTP code: " . $headers['http_code'][1], true), "CheckHeader", LOG_INFO);
+	
 	if(!isset($a['scheme'])) {
 		$a = parse_url("http://".$_GET['url']);
+		/*$hostname = explode("." , $a['host']);
 		$hostname = explode("." , $a['host']);
-	$hostname = explode("." , $a['host']);
 		if (count($hostname) > 1){
 			$b = $hostname[count($hostname)-2] . "." . $hostname[count($hostname)-1];
-		}
-		$a = parse_url("http://".$b);
+		}*/
 	}
 	if(isset($a['host'])) {
 		if (!isset($a['path'])) $a['path'] = '/';
-		$url = $a['scheme']."://www.".$a['host']. $a['path'];
+		$url = $a['scheme']."://".$a['host']. $a['path'];
+		
+		//hst_log($headers['http_code'][1], "CheckHeader", LOG_WARNING);
+		if ($headers['http_code'][1] >= 300 && $headers['http_code'][1] < 400) {
+			//hst_log($headers['http_code'][1], "CheckHeader", LOG_WARNING);
+			$url = preg_replace("/[\d-_\+=`~\"?'&]/", "", $headers['Location']);
+			hst_log("Redirected from base url to " . $url , "URL Validation Check", LOG_WARNING);
+		}
+		
 		$n_basic = new basicInformation($url);
 	}
 	$rm = new RequestManager();
