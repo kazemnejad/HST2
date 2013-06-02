@@ -2,8 +2,9 @@
 //chdir('include/core');
 require_once 'include/config.php';
 require_once 'include/core/utilFunctions.php';
+include 
 /**
- * <h1>PHP Crawler</h1>
+ * <h1>PHP Crawler</h1>asdfsf
  * @author Vladimir Fedorkov, Doug Martin, and Sumit Dutta
  * @version 0.8 2007-05-04
  * @link http://astellar.com/
